@@ -7,10 +7,38 @@
     <title>GIT命令</title>
 </head>
 <body>
-    <h1>git 的命令解析</h1>
+    <h2>一、git设置</h2>
+    <hr>
+    <p><strong>git config --global:</strong>有了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然你也可以对某个仓库指定的不同的用户名和邮箱，根据个人情况设置。</p>
+    <h2>二、创建版本库</h2>
     <hr>
     <p><strong>cd:</strong>进入某个目录</p>
     <p><strong>mkdir:</strong>创建一个文件</p>
     <p><strong>pwd:</strong>显示当前的目录路径</p>
+    <h2>三、添加文件到版本库</h2>
+    <hr>
+    <p><strong>git add:</strong>将文件提交到暂存区</p>
+    <p><strong>git commit -m:</strong>将暂存区文件提交到仓库（单引号内为注释）</p>
+    <h2>四、检查是否有未提交的文件</h2>
+    <hr>
+    <p><strong>git status:</strong>检查当前文件状态</p>
+    <h2>五、检查文件是否被修改</h2>
+    <hr>
+    <p><strong>git diff:</strong>查看文件修改的内容</p>
+    <h2>六、查看历史变更记录</h2>
+    <hr>
+    <p><strong>git log:</strong>获得历史修改记录</p>
+    <p><strong>git log --pretty=oneline:</strong>使记录只显示主要的内容，一行显示</p>
+    <h2>七、版本回退</h2>
+    <hr>
+    <p><strong>cat:</strong>查看文件内容</p>
+    <p><strong>git reset --hard HEAD^:</strong>回退到上一个版本</p>
+    <p><strong>git reset --hard HEAD^^:</strong>回退到上上一个版本</p>
+    <p><strong>git reset --hard HEAD~100:</strong>回退到100个版本之前</p>
+    <p><strong>git reflog:</strong>获取历史版本号</p>
+    <p><strong>git reset --hard 版本号:</strong>回退到该版本号对应的版本</p>
+    <h2>八、将本地文件推送到github仓库</h2>
+    <hr>
+    <p><strong>git reset --hard 版本号:</strong>回退到该版本号对应的版本</p>
 </body>
 </html>
